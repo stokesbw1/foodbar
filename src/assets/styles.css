@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+    .navLinkActive {
+        @apply relative font-semibold text-brand-default after:h-[.45rem] after:w-[.45rem] after:bg-brand-default after:rounded-full after:absolute after:-bottom-[8px] after:left-1/2 after:-translate-x-1/2;
+    }
+
+    .navLinkHover {
+        @apply hover:text-brand-default hover:font-semibold;
+    }
+
+    .pip {
+        @apply h-2.5 w-2.5 rounded-full bg-brand-default hover:scale-125 transform transition z-10
+    }
+
+    .pipCurrent {
+        @apply opacity-85
+    }
+
+    .pipPrev1 {
+        @apply opacity-65
+    }
+
+    .pipPrev2 {
+        @apply opacity-55
+    }
+
+    .pipPrev3 {
+        @apply opacity-45
+    }
+
+    .pipPrev4 {
+        @apply opacity-0 hidden
+    }
+
+    .menuItem {
+        @apply bg-gray-950 h-40 w-[169px] relative text-white flex flex-col 
+        text-end justify-between px-5 py-2 transform hover:scale-[1.05] transition 
+        cursor-pointer shadow-2xl rounded-lg
+    }
+
+    .menuItemPrev4 {
+        @apply opacity-0 hidden transition
+    }
+}
+
+@tailwind utilities;
