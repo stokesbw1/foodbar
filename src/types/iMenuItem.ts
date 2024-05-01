@@ -1,4 +1,4 @@
-interface IMenuItem {
+export interface IMenuItem {
     src: string, 
     price: number,
     name: string,

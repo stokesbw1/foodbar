@@ -1,4 +1,4 @@
- enum CarouselItemClasses {
+export enum CarouselItemClasses {
     current = "current",
     prev = "prev",
     prev1 = "prev1",

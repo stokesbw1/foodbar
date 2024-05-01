@@ -1,34 +1,30 @@
 <script setup lang="ts">
-    import portrait from "@/assets/img/portrait.jpg"
-    import { ref } from "vue";
+import portrait from "@/assets/img/portrait.jpg"
+import {  ref } from "vue";
 
-    const activeLink = ref("");
+const activeLink = ref("");
 </script>
 
 <template>
-    <nav>
+<nav>
     <ul class="flex grow justify-between">
         <li>
-            <a href="#" :class="{ 'navLinkActive': activeLink === 'shop' }" 
-            class="navLinkHover" @click="activeLink = 'shop'">
+            <a href="#" :class="{ 'navLinkActive': activeLink === 'shop' }" class="navLinkHover" @click="activeLink = 'shop'">
                 Shop
             </a>
         </li>
         <li>
-            <a href="#" :class="{ 'navLinkActive': activeLink === 'features' }" 
-            class="navLinkHover" @click="activeLink = 'features'">
+            <a href="#" :class="{ 'navLinkActive': activeLink === 'features' }" class="navLinkHover" @click="activeLink = 'features'">
                 Features
             </a>
         </li>
         <li>
-            <a href="#" :class="{ 'navLinkActive': activeLink === 'recipes' }" 
-            class="navLinkHover bgbr" @click="activeLink = 'recipes'">
+            <a href="#" :class="{ 'navLinkActive': activeLink === 'recipes' }" class="navLinkHover bgbr" @click="activeLink = 'recipes'">
                 Recipes
             </a>
         </li>
         <li>
-            <a href="#" :class="{ 'navLinkActive': activeLink === 'hotline' }" 
-            class="navLinkHover" @click="activeLink = 'hotline'">
+            <a href="#" :class="{ 'navLinkActive': activeLink === 'hotline' }" class="navLinkHover" @click="activeLink = 'hotline'">
                 Hotline
             </a>
         </li>
@@ -40,7 +36,6 @@
         <img class="h-8 w-8 rounded-full object-cover" :src=portrait alt="yummy salad">
     </div>
 </nav>
-
 </template>
 
 <style scoped>
