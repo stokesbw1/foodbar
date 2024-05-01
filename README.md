@@ -6,7 +6,6 @@ FoodBar is a Vue.js application that showcases a menu of delicious salads with i
 
 ## Demo Video
 
-Check out the live demo video of FoodBar 
 ![FoodBar Gif Preview](https://firebasestorage.googleapis.com/v0/b/foodbar-672e5.appspot.com/o/foodbar.gif?alt=media&token=5bf8f55f-e4cd-4ace-9c26-c588c7058415).
 
 ## Website
